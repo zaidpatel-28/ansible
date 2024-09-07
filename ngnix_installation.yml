@@ -1,0 +1,13 @@
+---
+- name: Installing and starting Ngnix server
+  hosts: all
+  become: true
+
+  tasks: 
+  - name: Install Nginx
+    shell : apt-get install -y nginx
+  - name: Start Nginx
+    service: 
+     name: nginx
+     state: started
+
