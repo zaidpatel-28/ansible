@@ -1,0 +1,11 @@
+---
+- name: Playbook to install pgbadger on the destination server
+  hosts: all
+  become: true
+
+  tasks:
+   - name: Update apt packages
+     shell: apt-get update 
+   - name: Install pgbadger 
+     shell: apt-get install -y pgbadger
+
