@@ -1,5 +1,5 @@
 ---
-- name: Playbook to install pgbadger on the destination server
+- name: Playbook to install pgbadger on the destination Ubuntu server
   hosts: all
   become: true
 
